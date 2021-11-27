@@ -28,7 +28,7 @@ module.exports = (app) => {
     });
   })
 
-  app.delete('./api/notes/:notesId', (req, res) => {
+  app.delete('./api/notes/:noteId', (req, res) => {
     const chosen = req.params.noteId
     console.log(chosen)
 
