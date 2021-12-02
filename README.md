@@ -2,11 +2,13 @@
 
 This project was for my UCSD coding bootcamp. Using a starter code and template to create application called Note Taker.
 
-## Heroku Deployment & Repository
+## Heroku Deployment
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://note-taker-ltl.herokuapp.com/)
-[GitHub Repo](https://github.com/latommyla/Note-Taker#)
 
+## GitHub Repo
+
+- [GitHub Repo](https://github.com/latommyla/Note-Taker#)
 
 ## Description 
 
@@ -33,7 +35,13 @@ To install this application, simply download the zip file or clone the SSH key t
 
 ## How it works?
 
+- You will be presented with the applications main page
 
+<img src="./public/assets/images/demo1.png" alt="mainpage" title="mainpage">
+
+- The next page you will be able to save your notes!
+
+<img src="./public/assets/images/demo2.png" alt="savenotes" title="savenotes">
 
 ## Contact
 
