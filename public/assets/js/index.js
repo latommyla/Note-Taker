@@ -1,3 +1,4 @@
+// Variables
 let noteTitle;
 let noteText;
 let saveNoteBtn;
@@ -12,19 +13,19 @@ if (window.location.pathname === '/notes') {
   noteList = document.querySelectorAll('.list-container .list-group');
 }
 
-// Show an element
+// Show elements
 const show = (elem) => {
   elem.style.display = 'inline';
 };
 
-// Hide an element
+// Hide elements
 const hide = (elem) => {
   elem.style.display = 'none';
 };
 
-// activeNote is used to keep track of the note in the textarea
 let activeNote = {};
 
+// Grabs notes
 const getNotes = () =>
   fetch('/api/notes', {
     method: 'GET',
@@ -33,6 +34,7 @@ const getNotes = () =>
     },
   });
 
+// Saves notes
 const saveNote = (note) =>
   fetch('/api/notes', {
     method: 'POST',
@@ -42,6 +44,7 @@ const saveNote = (note) =>
     body: JSON.stringify(note),
   });
 
+// Deletes notes 
 const deleteNote = (id) =>
   fetch(`/api/notes/${id}`, {
     method: 'DELETE',
@@ -50,6 +53,7 @@ const deleteNote = (id) =>
     },
   });
 
+// Renders active notes
 const renderActiveNote = () => {
   hide(saveNoteBtn);
 
@@ -77,7 +81,7 @@ const handleNoteSave = () => {
   });
 };
 
-// Delete the clicked note
+// Deletes note
 const handleNoteDelete = (e) => {
   e.stopPropagation();
 
